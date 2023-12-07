@@ -1,4 +1,4 @@
-import Image from 'next/image'
+"use client"
 import Card from './card'
 
 export default function Home() {

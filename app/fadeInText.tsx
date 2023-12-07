@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './FadeInText.css'; // Import your component-specific styles
 
-const FadeInText = ({ text }) => {
+interface FadeInTextProps {
+    text: string;
+  }
+
+  const FadeInText: React.FC<FadeInTextProps> = ({ text }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
