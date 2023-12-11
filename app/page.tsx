@@ -46,7 +46,7 @@ export default function Home() {
             3.
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            If you choose to flip it, choose someone else who also has to do it with you. If they refuse, they take a shot.
+            If you choose to flip it, you may pass it to another person too. If they refuse, they take a shot.
           </p>
         </a>
 
