@@ -53,4 +53,5 @@ export const keyQuestions = [
     {'⛏': "Choose someone. Work your best pick-up line."},
     {'🦀': "Do a crab walk around everyone 3 times."},
     {'🍔': "Call Mcdonald’s and ask if they sell Whoppers. Put on speaker."},
+    {'⁇': "Do you have a 'what if' person? If you're single and not with them right now, text them."},
 ];

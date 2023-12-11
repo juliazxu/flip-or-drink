@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import FadeInText from '@/app/fadeInText';
 import {keyQuestions} from '@/app/keyQuestions';
 
 
@@ -14,6 +13,7 @@ function Card() {
     const [flip, setFlip] = useState(false);
     const [currInteger, changeInteger] = useState(getRandomInt(1, keyQuestions.length - 1));
     const [numPass, changeNumPass] = useState(0);
+
     let currentItem = keyQuestions[currInteger];
     let currentKey = Object.keys(currentItem)[0];
     let currentQuestion = Object.values(currentItem)[0];
@@ -61,7 +61,7 @@ function Card() {
                     )
                 }
             </div>
-            <div style={{
+            {flip && <div style={{
                 width: '500px',
                 // height: '200px',
                 background: '#fbd7f8',
@@ -73,7 +73,7 @@ function Card() {
                 padding: '20px',
                 marginRight: '20px',
             }}>
-                <FadeInText text={currentQuestion}/>
+                {currentQuestion}
                 <br />
                     <button style={{
                     width: '150px',
@@ -88,7 +88,7 @@ function Card() {
                     changeNumPass(0);
                 }}>
                     Next</button>
-            </div>
+            </div>}
         </ReactCardFlip>
     );
 }
