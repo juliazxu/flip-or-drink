@@ -20,11 +20,10 @@ function Card() {
     return (
         <ReactCardFlip isFlipped={flip}
             flipDirection="vertical">
-            <div style={{
-                width: '500px',
-                background: '#d7fbda',
+            <div className="gradient-1" style={{
+                width: '90vw',
+                // height: '50vh',
                 fontSize: '40px',
-                color: 'green',
                 margin: '20px',
                 borderRadius: '4px',
                 textAlign: 'center',
@@ -34,22 +33,22 @@ function Card() {
                 <br />
                 <br />
                 <button style={{
-                    width: '150px',
+                    width: '120px',
                     padding: '10px',
                     fontSize: '20px',
                     background: '#f5d9fa',
                     fontWeight: 'bold',
                     borderRadius: '5px',
-                    marginRight: '20px'
+                    marginRight: '10px'
                 }} onClick={() => setFlip(!flip)}>
                     Flip</button>
                 {
                     (numPass < 2) && (
                         <button style={{
-                            width: '150px',
+                            width: '120px',
                             padding: '10px',
                             fontSize: '20px',
-                            background: '#f5d9fa',
+                            color: 'white',
                             fontWeight: 'bold',
                             borderRadius: '5px'
                         }} onClick={() => {
@@ -61,27 +60,25 @@ function Card() {
                     )
                 }
             </div>
-            {flip && <div style={{
-                width: '500px',
-                // height: '200px',
-                background: '#fbd7f8',
-                fontSize: '40px',
-                color: 'blue',
+            {flip && <div className="gradient-2" style={{
+                width: '90vw',
+                // height: '50vh',
+                fontSize: '30px',
                 margin: '20px',
                 borderRadius: '4px',
                 textAlign: 'center',
                 padding: '20px',
-                marginRight: '20px',
             }}>
                 {currentQuestion}
                 <br />
                     <button style={{
-                    width: '150px',
+                    width: '120px',
                     padding: '10px',
                     fontSize: '20px',
                     background: '#f5d9fa',
                     fontWeight: 'bold',
-                    borderRadius: '5px'
+                    borderRadius: '5px',
+                    marginTop: '20px',
                 }} onClick={() => {
                     changeInteger(getRandomInt(1, keyQuestions.length - 1));
                     setFlip(!flip);

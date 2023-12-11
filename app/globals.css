@@ -17,11 +17,28 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.p-1 {
+  padding: 0;
+  padding-top: 5rem;
+}
+
+.gradient-1 {
+  background: rgb(63,179,251);
+  background: linear-gradient(139deg, rgba(63,179,251,1) 0%, rgba(252,70,176,1) 100%);
+}
+
+.gradient-2 {
+  background: rgb(183,230,126);
+  background: linear-gradient(217deg, rgba(183,230,126,1) 0%, rgba(204,156,233,1) 100%);
 }
